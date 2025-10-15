@@ -4,10 +4,10 @@ from typing import Literal
 
 from langchain_core.tools import tool
 
-from agents.jur_agent.config import AppConfig
-from agents.jur_agent.tools.search_action import ActionSearch
-from agents.jur_agent.tools.search_yandex import YandexSearch
-from agents.jur_agent.types import SearchResults
+from config import AppConfig
+from tools.searching.search_action import ActionSearch
+from tools.searching.search_yandex import YandexSearch
+from utils.types import SearchResults
 
 logger = logging.getLogger(__name__)
 
